@@ -17,6 +17,7 @@ header {
     background-color: #F6F8FA;
     display: flex;
     padding: 10px 30px;
+    gap: 30px
 }
 
 h1 {
@@ -39,7 +40,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     font-size: 14px;
 }
 
@@ -59,7 +60,7 @@ nav ul li:last-child {
 
 nav ul li a {
     color: #677788;
-    transition: color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 nav ul li:last-child a {
@@ -73,6 +74,7 @@ nav ul li:last-child {
 nav ul li a:hover {
     color: #2476FF;
     cursor: pointer;
+
 }
 
 nav ul li:last-child a:hover {
@@ -85,6 +87,14 @@ nav ul li:last-child:hover {
     cursor: pointer;
 }
 
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 /* TOP-PANEL */
 
 .top-panel {
@@ -94,8 +104,52 @@ nav ul li:last-child:hover {
     gap: 20px;
 }
 
-.icons-side img {
-    display: none;
+/* ICONS FLOATING */
+
+.icons-side {
+    position: absolute;
+    top: 0;
+}
+
+.icons-side span:nth-of-type(1) {
+    transform: scale(0.3) translate(90rem, 8rem);
+}
+
+.icons-side span:nth-of-type(2) {
+    transform: scale(0.4) translate(87rem, 10rem);
+}
+.icons-side span:nth-of-type(3) {
+    transform: scale(0.4) translate(120rem, 10rem);
+}
+.icons-side span:nth-of-type(4) {
+    transform: scale(0.4) translate(60rem, 37rem);
+}
+
+.icons-side span:nth-of-type(5) {
+    transform: scale(0.4) translate(102rem, 35rem);
+}
+.icons-side span:nth-of-type(6) {
+    transform: scale(0.1) translate(151rem, 74rem);
+    padding: 60px;
+    box-shadow: 0 0 60px grey;
+}
+.icons-side span:nth-of-type(7) {
+    transform: scale(0.35) translate(130rem, 71rem);
+
+}
+
+.icons-side span {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 15px grey;
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    position: absolute;
+}
+
+.icons-side span img {
+    padding: 50px;
 }
 
 .action-side {
@@ -161,4 +215,25 @@ nav ul li:last-child:hover {
 
 .top-panel-actions a:nth-child(2):hover {
      color: #2476FF;
+}
+
+/* WHY PANEL */
+
+.why-panel {
+   display: flex;
+   flex-direction: column;
+}
+
+.why-panel h3 {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.why-panel h3 + p:nth-of-type(1) {
+    color: #677788;
+    width: 600px;
+    text-align: center;
+    margin: 2rem auto;
+    line-height: 1.6rem;
 }
