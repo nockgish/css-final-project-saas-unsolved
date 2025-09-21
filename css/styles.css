@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body, body * {
+    margin: 0;
+    padding: 0;
+}
+
+#all {
+    max-width: 1024px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #F6F8FA;
+    display: flex;
+    padding: 10px 30px;
+}
+
+h1 {
+    background-image: url('/assets/logos/logo-front.svg');
+    text-indent: -9999px;
+    width: 151px;
+    height: 45px;
+    margin: 5px 0;
+    display: flex;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    padding-top: 10px
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+nav ul li:last-child {
+    background: #2476FF;
+    border-radius: 30px;
+    padding: 15px 25px;
+    position: relative;
+    top: -5px;
+}
+
+nav ul li a {
+    color: #677788;
+    transition: color 0.2s ease-in-out;
+}
+
+nav ul li:last-child a {
+      color: #fff;
+}
+
+nav ul li:last-child {
+    transition: background 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #2476FF;
+    cursor: pointer;
+}
+
+nav ul li:last-child a:hover {
+    color: #fff;
+}
+
+nav ul li:last-child:hover {
+    color: #fff;
+    background: #184aa0;
+    cursor: pointer;
+}
+
+/* TOP-PANEL */
+
+.top-panel {
+    background-image: url('/assets/bg/background-top.svg');
+    height: 446px;
+    /* flex-direction should be row */
+    gap: 20px;
+}
+
+.icons-side img {
+    display: none;
+}
+
+.action-side {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px;
+}
+
+.action-side h2 {
+    font-size: 40px;
+    font-weight: 400;
+    width: 333px;
+}
+
+.top-panel-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top-panel-text p {
+    color: #677788;
+    font-weight: 500;
+}
+
+.top-panel-actions {
+   display: flex;
+   gap: 10px;
+   margin-top: 20px;
+}
+
+.top-panel-actions a {
+   display: flex;
+   color: #667778;
+   font-weight: 500;
+   text-decoration: none;
+   padding: 15px 25px;
+}
+
+.top-panel-actions a:first-child {
+    background: #2476FF;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 300;
+    transition: background 0.2s ease-in-out;
+    display: flex;
+    gap: 5px
+}
+
+.top-panel-actions a:first-child:hover {
+    color: #fff;
+    background: #184aa0;
+    cursor: pointer;
+}
+
+.top-panel-actions a:first-child i {
+    padding-top: 2px;
+}
+
+.top-panel-actions a:nth-child(2) {
+    transition: color 0.2s ease-in-out;
+}
+
+.top-panel-actions a:nth-child(2):hover {
+     color: #2476FF;
+}
