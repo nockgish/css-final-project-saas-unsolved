@@ -110,29 +110,118 @@ main {
 }
 
 .icons-side span:nth-of-type(1) {
+  animation: img1 0.8s ease-in-out;
   transform: scale(0.3) translate(90rem, 8rem);
 }
 
+@keyframes img1 {
+  from {
+    opacity: 0;
+    transform: scale(0.1) translate(0rem, 0rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.3) translate(90rem, 8rem);
+  }
+}
+
 .icons-side span:nth-of-type(2) {
+  animation: img2 0.8s ease-in-out;
   transform: scale(0.4) translate(87rem, 10rem);
 }
+
+@keyframes img2 {
+  from {
+    opacity: 0;
+    transform: scale(0.1) translate(0rem, 0rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.4) translate(87rem, 10rem);
+  }
+}
+
 .icons-side span:nth-of-type(3) {
+  animation: img3 0.8s ease-in-out;
   transform: scale(0.4) translate(120rem, 10rem);
 }
+
+@keyframes img3 {
+  from {
+    opacity: 0;
+    transform: scale(0.1) translate(0rem, 0rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.4) translate(120rem, 10rem);
+  }
+}
+
 .icons-side span:nth-of-type(4) {
+  animation: img4 0.8s ease-in-out;  
   transform: scale(0.4) translate(60rem, 37rem);
 }
 
+@keyframes img4 {
+  from {
+    opacity: 0;
+    transform: scale(0.1) translate(0rem, 0rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.4) translate(60rem, 37rem);
+  }
+}
+
 .icons-side span:nth-of-type(5) {
+    animation: img5 1s ease-in-out;
   transform: scale(0.4) translate(102rem, 35rem);
 }
+
+@keyframes img5 {
+  from {
+    opacity: 0;
+    transform: scale(0.1) translate(300rem, 100rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.4) translate(102rem, 35rem);
+  }
+}
+
 .icons-side span:nth-of-type(6) {
+    animation: img6 0.9s ease-in-out;
   transform: scale(0.1) translate(151rem, 74rem);
   padding: 60px;
   box-shadow: 0 0 60px grey;
 }
+
+@keyframes img6 {
+  from {
+    opacity: 0;
+    transform: scale(0.1) translate(500rem, 100rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.1) translate(151rem, 74rem);
+  }
+}
+
 .icons-side span:nth-of-type(7) {
+   
   transform: scale(0.35) translate(130rem, 71rem);
+  animation: img7 1s ease-in-out;
+}
+
+@keyframes img7 {
+  from {
+    opacity: 0;
+    transform: scale(0.05) translate(500rem, -70rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.35) translate(130rem, 71rem);
+  }
 }
 
 .icons-side span {
@@ -144,6 +233,7 @@ main {
   display: block;
   position: absolute;
 }
+
 
 .icons-side span img {
   padding: 50px;
@@ -236,10 +326,10 @@ main {
 }
 
 .top-why {
-    display: flex;
-    flex-direction: column;
-    gap: 44px;
-    margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-bottom: 10rem;
 }
 
 .reasons {
@@ -266,13 +356,13 @@ main {
 }
 
 .circle {
-    position: relative;
-    width: 4rem;
-    height: 4rem;
-    border: 8px solid white;
-    background: #ecf2ff;
-    border-radius: 100%;
-    transition: transform 0.2s ease;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border: 8px solid white;
+  background: #ecf2ff;
+  border-radius: 100%;
+  transition: transform 0.2s ease;
 }
 
 .one-bullet p {
@@ -296,46 +386,52 @@ main {
 }
 
 /* PRICING */
+
+.pricing-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .pricing-intro {
-   display: flex;
-   flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing-details {
- display: flex;
- flex-direction: row;
- gap: 50px
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .pricing-side {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 105%;
-    /* height: 542px; */
-    border: 1px solid #e2e2e2;
-    padding: 8% 4.5% 8% 4.5%;
-    gap: 30px;
-    box-shadow: 0 10px 20px 0px rgb(0 0 0 / 15%);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 105%;
+  /* height: 542px; */
+  border: 1px solid #e2e2e2;
+  padding: 8% 4.5% 8% 4.5%;
+  gap: 30px;
+  box-shadow: 0 10px 20px 0px rgb(0 0 0 / 15%);
 }
 
 .pricing-side p {
-    color: #667778;
+  color: #667778;
 }
 
 .pricing-side p:nth-of-type(1) {
-    border-bottom: 1px solid #8D8D8D;
-    padding-bottom: 10%;
+  border-bottom: 1px solid #8d8d8d;
+  padding-bottom: 10%;
 }
 
 .pricing-side p:nth-of-type(2) {
-    padding: 10% 0 0 0;
+  padding: 10% 0 0 0;
 }
 
 .pricing-side .number {
-    font-weight: 500;
-    font-size: 50px;
-    color: #000;
-
+  font-weight: 500;
+  font-size: 50px;
+  color: #000;
 }
 
 .pricing-side a {
@@ -346,34 +442,58 @@ main {
   text-decoration: none;
   width: 115px;
   transition: background 0.2s ease-in-out;
-  
 }
 
 .pricing-side a i {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .pricing-side a:hover {
-   background: #184aa0;
-   cursor: pointer;
+  background: #184aa0;
+  cursor: pointer;
+}
+
+.pricing-side p:nth-of-type(3) {
+  font-size: 12px;
 }
 
 .feature-side {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .feature-side > div {
-  flex: 1 1 45%;   
+  flex: 1 1 45%;
   /* min-width: 200px;   */
   /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-side h4 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .feature-side > div p {
-    display: flex;
+  display: flex;
+  color: #667778;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .feature-side > div img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.cancel-time h4 span {
+  background: #01c9a7;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 30px;
 }
