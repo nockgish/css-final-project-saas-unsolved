@@ -142,7 +142,7 @@ main {
 }
 
 .icons-side span:nth-of-type(3) {
-  animation: img3 0.8s ease-in-out;
+  animation: img3 0.9s ease-in-out;
   transform: scale(0.4) translate(120rem, 10rem);
 }
 
@@ -391,6 +391,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-bottom: 9rem;
 }
 
 .pricing-intro {
@@ -496,4 +497,30 @@ main {
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 30px;
+}
+
+/* CONTACT & HIRE */
+
+.contact-panel {
+    background: #20335B;
+    display: flex;
+}
+
+.contact-panel h3 {
+    color: #fff;
+}
+
+.hire-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+}
+
+.hire-side img {
+    border-radius: 100%;
 }
