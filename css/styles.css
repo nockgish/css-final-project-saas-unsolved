@@ -87,6 +87,10 @@ nav ul li:last-child:hover {
   cursor: pointer;
 }
 
+header .beeschurger {
+  display: none;
+}
+
 /* MAIN */
 
 main {
@@ -102,13 +106,18 @@ main {
   height: 446px;
   /* flex-direction should be row */
   gap: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 /* ICONS FLOATING */
 
 .icons-side {
-  position: absolute;
-  top: 0;
+    position: relative;
+    top: -5rem;
+    /* outline: 1px solid red; */
+    width: 100%;
+    right: 29rem;
 }
 
 .icons-side span:nth-of-type(1) {
@@ -176,7 +185,7 @@ main {
 }
 
 .icons-side span:nth-of-type(5) {
-    animation: img5 1s ease-in-out;
+  animation: img5 1s ease-in-out;
   transform: scale(0.4) translate(102rem, 35rem);
 }
 
@@ -228,7 +237,7 @@ main {
 
 .icons-side span {
   background: #fff;
-  border-radius: 100%;
+  border-radius: 50%;
   box-shadow: 0 0 15px grey;
   width: fit-content;
   height: fit-content;
@@ -245,6 +254,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 80px 50px;
+  position: relative;
+  z-index: 20;
 }
 
 .action-side h2 {
@@ -616,12 +627,13 @@ main {
 }
 
 .form-tell textarea {
-  width: 100%;
+  width: 95%;
   border: 1px solid #E6E8F2;
   height: 150px;
   font-family: 'Inter', sans-serif;
   color: #667788;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .check-box {
@@ -767,4 +779,94 @@ footer nav ul li:hover, footer nav ul li:last-child:hover {
     border-radius: 3px;
     position: relative;
     top: -1px;
+}
+
+/* TABLET SIZE */
+
+@media (max-width: 1024px) {
+
+header .beeschurger {
+  display: flex;
+  margin-left: auto;
+  color: #677788;
+  transform: translate(2px, 26px);
+}
+
+header nav {
+  display: none;
+}
+
+.top-panel {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-panel-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.top-panel .action-side {
+  width: 100%;
+  padding: 0;
+}
+
+.action-side h2 {
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-panel-text {
+  margin-top: 7rem;
+}
+
+.top-panel-text p {
+    color: #677788;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.icons-side {
+    /* outline: 1px solid red; */
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.icons-side span {
+  animation: none !important;
+}
+
+.top-panel-actions a:first-child:hover {
+    background: #2476ff;
+    color: #fff;
+}
+
+.top-panel-actions a:nth-child(2):hover {
+  color: #677788;
+}
+
+/* WHY PANEL */
+
+.why-panel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+}
+
+.reasons {
+  gap: 0px;
+}
+
+.one-bullet:hover .circle {
+  transform: scale(100%);
+}
 }
