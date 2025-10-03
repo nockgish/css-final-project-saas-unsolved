@@ -869,4 +869,50 @@ header nav {
 .one-bullet:hover .circle {
   transform: scale(100%);
 }
+
+/* pricing */
+
+.pricing-details {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-side {
+  margin: 2rem
+}
+
+.pricing-side p:nth-of-type(1), .pricing-side p:nth-of-type(2), .pricing-side p:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-side a {
+  margin: auto;
+}
+
+.feature-side {
+  margin: 2rem 5rem;
+}
+
+/* CONTACT */
+
+.contact-panel {
+  flex-direction: column;
+}
+
+.hire-side {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 60px;
+  margin: 60px 50px;
+}
+
+.hire-text {
+  flex: 0 0 60%;
+}
+
+.hire-quote {
+  flex: 0 0 30%;
+}
 }
