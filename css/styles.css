@@ -1014,9 +1014,24 @@ footer nav .features {
     margin: 2rem auto;
   }
 
+  .pricing-panel {
+    gap: 5px;
+  }
+
+  .feature-side {
+    margin: 2rem;
+  }
+
   .hire-side {
     width: fit-content;
     flex-direction: column;
+    justify-content: center;
+    display: flex;
+    padding-top: 3rem;
+  }
+
+  .hire-text {
+    flex: 0 0 100%;
   }
 
   .form-side {
@@ -1039,4 +1054,24 @@ footer nav .features {
     display: flex;
     width: 97%;
 }
+
+.contact-panel {
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+}
+.contact-panel h3 {
+  justify-content: center;
+}
+
+.contact-panel h3 + p:nth-of-type(1) {
+  padding: 0 0 2rem 0;
+}
+
+/* FOOTER */
+  footer {
+    flex-direction: column;
+  }
 }
