@@ -1074,4 +1074,25 @@ footer nav .features {
   footer {
     flex-direction: column;
   }
+
+  footer .company-tag {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  footer .company-tag p {
+    margin: auto;
+  }
+
+  footer nav {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  footer nav .features {
+    margin-left: 0rem;
+}
+
+  footer nav > div ul {
+    gap: 20px;
+  }
 }
