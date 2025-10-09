@@ -542,6 +542,7 @@ main {
   padding: 2%;
   color: #fff;
   margin: 150px 50px;
+  gap: 35px;
 }
 
 .hire-side img {
@@ -575,6 +576,17 @@ main {
   font-size: 14px;
   font-weight: 500;
 }
+
+  .hire-quote p:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .hire-quote p:nth-of-type(2) {
+     font-style: normal; 
+     color: #677788;
+     padding-top: 0.35rem;
+  }
 
 .form-side {
   display: flex;
@@ -942,17 +954,6 @@ footer nav ul li:last-child:hover {
 
   .hire-quote {
     flex: 0 0 30%;
-  }
-
-  .hire-quote p:nth-of-type(1) {
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  .hire-quote p:nth-of-type(2) {
-     font-style: normal; 
-     color: #677788;
-     padding-top: 0.35rem;
   }
 
   .hire-side img {
