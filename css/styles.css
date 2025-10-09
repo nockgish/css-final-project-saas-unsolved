@@ -1028,11 +1028,11 @@ footer nav ul li:last-child:hover {
   }
 
   .why-panel h3 + p:nth-of-type(1) {
-    width: 100%;
+    width: 80%;
   }
 
   .top-why {
-    gap: 0px;
+    gap: 10px;
     margin-bottom: 5rem;
   }
 
